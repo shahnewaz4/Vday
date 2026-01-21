@@ -8,7 +8,7 @@ next.addEventListener('click', () => {
         num++;
         document.querySelector('.card').innerHTML = `
         <p> It's almost Valentines day <br>
-            but I still want to let you know<br>
+            but I still want to show you<br>
             how much I love you.<br>
         </p>`;
         
@@ -35,5 +35,5 @@ next.addEventListener('click', () => {
     else if(num == 4){
         window.location.href ="yesno.html";
     }
-    
+
 });

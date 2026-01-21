@@ -1,14 +1,31 @@
 const yesBtn = document.getElementById('yesBtn');
 const noBtn = document.getElementById('noBtn');
 const heartsContainer = document.getElementById('hearts');
-
+const next = document.getElementById('next');
 
 yesBtn.addEventListener('click', () => {
-document.querySelector('.card').innerHTML = `
-<h1>🥰 Yay!!! 🥰</h1>
-<p>I love you so much baby mwah mwah mwah</p>
+document.querySelector('.container').innerHTML = `
+<div class="card">
+    <h1>🥰 Yay!!! 🥰</h1>
+    <p>I love you so much baby mwah mwah mwah</p>
+    
+</div>
+<h2>To Countdown</h2>
+<div class="next">
+        <button id="next" class="buttons">
+            
+            <i class="arrow right"></i>
+        </button>
+            
+    </div>
 `;
 createHearts();
+const next = document.getElementById('next');
+
+next.addEventListener('click', () => {
+    window.location.href ="countdown.html"
+});
+
 });
 
 
@@ -32,4 +49,4 @@ heartsContainer.appendChild(heart);
 
 setTimeout(() => heart.remove(), 10000);
 }
-}
+};
