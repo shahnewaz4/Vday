@@ -1,12 +1,15 @@
+html{
+    background: #ff9a9e;
+}
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
+
 }
 
 .container {
@@ -15,7 +18,16 @@ body {
     align-items: center;
     gap: 10px;
 }
-
+.pictures{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+img{
+    width: 200px;
+    animation: popIn 1s ease;
+}
 .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
